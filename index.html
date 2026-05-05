@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Улица Кирова | Астрахань</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+    <!-- ================= ШАПКА ================= -->
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">
+                <!-- Замените src на путь к вашему логотипу -->
+                <img src="assets/images/logo.png" alt="Логотип Улица Кирова" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="logo-text" style="display: none;">УЛИЦА КИРОВА</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#history">История</a></li>
+                <li><a href="#sights">Достопримечательности</a></li>
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#tour3d">3D-тур</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">Темная тема</button>
+                <button class="burger" id="burgerBtn" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+        <nav class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#history">История</a></li>
+                <li><a href="#sights">Достопримечательности</a></li>
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#tour3d">3D-тур</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="hero" id="hero">
+            <!-- Замените путь к изображению: assets/images/banner2.jpg -->
+            <div class="hero-parallax-bg" style="background-image: url('assets/images/banner2.jpg');"></div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Улица Кирова в Астрахани</h1>
+                <p class="hero-subtitle">одна из старейших и центральных улиц города</p>
+                <div class="hero-welcome">ДОБРО ПОЖАЛОВАТЬ В СЕРДЦЕ АСТРАХАНИ</div>
+                <a href="#history" class="btn-primary">Узнать больше</a>
+            </div>
+        </section>
+
+        <!-- ================= ИСТОРИЯ ================= -->
+        <section class="section history" id="history">
+            <div class="container">
+                <h2 class="section-title">История улицы</h2>
+                <div class="history-grid">
+                    <!-- Карточка 1: замените путь к изображению -->
+                    <div class="history-card hover-scale animate-on-scroll"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/card1.jpg');">
+                        <h3>КИРОВА</h3>
+                        <p>Историческая улица в центре Астрахани с красивой архитектурой и магазинами.</p>
+                        <a href="#sights" class="btn-outline-white">Продолжить</a>
+                    </div>
+                    <!-- Карточка 2: замените путь к изображению -->
+                    <div class="history-card hover-scale animate-on-scroll"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/card2.jpg');">
+                        <h3>КИРОВА</h3>
+                        <p>Расположенная в Кировском районе Астрахани, эта улица славится своей исторической застройкой.</p>
+                        <a href="#sights" class="btn-outline-white">Продолжить</a>
+                    </div>
+                    <!-- Карточка 3: замените путь к изображению -->
+                    <div class="history-card hover-scale animate-on-scroll"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/card3.jpg');">
+                        <h3>КИРОВА</h3>
+                        <p>Одна из центральных и старейших улиц Астрахани, привлекает внимание своей архитектурой.</p>
+                        <a href="#sights" class="btn-outline-white">Продолжить</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ДОСТОПРИМЕЧАТЕЛЬНОСТИ ================= -->
+        <section class="section sights" id="sights">
+            <div class="container">
+                <h2 class="section-title">Достопримечательности улицы Кирова</h2>
+                <div class="sights-grid">
+                    <!-- Карточка 1 -->
+                    <div class="sight-card hover-lift animate-on-scroll">
+                        <div class="sight-img" style="background-image: url('assets/images/garden.jpg'); background-color: #00809B;"></div>
+                        <h3>Братский сад</h3>
+                        <p>Мемориальный комплекс с Вечным огнём и памятником воинам-астраханцам, погибшим в Великой Отечественной войне.</p>
+                    </div>
+                    <!-- Карточка 2 -->
+                    <div class="sight-card hover-lift animate-on-scroll">
+                        <div class="sight-img" style="background-image: url('assets/images/skver.jpg'); background-color: #3F729F;"></div>
+                        <h3>Сквер имени С. М. Кирова</h3>
+                        <p>Зелёная зона в центре улицы с фонтанами, скамейками и памятником Сергею Мироновичу Кирову.</p>
+                    </div>
+                    <!-- Карточка 3 -->
+                    <div class="sight-card hover-lift animate-on-scroll">
+                        <div class="sight-img" style="background-image: url('assets/images/sharlau.jpg'); background-color: #4EBCD5;"></div>
+                        <h3>Дом и кондитерская Шарлау</h3>
+                        <p>Памятник архитектуры конца XIX века с узнаваемой башней, где ранее располагалась известная кондитерская.</p>
+                    </div>
+                    <!-- Карточка 4 -->
+                    <div class="sight-card hover-lift animate-on-scroll">
+                        <div class="sight-img" style="background-image: url('assets/images/pochta.jpg'); background-color: #00809B;"></div>
+                        <h3>Астраханский почтамт</h3>
+                        <p>Историческое здание с городскими часами на пересечении улиц Кирова и Чернышевского.</p>
+                    </div>
+                    <!-- Карточка 5 -->
+                    <div class="sight-card hover-lift animate-on-scroll">
+                        <div class="sight-img" style="background-image: url('assets/images/apteka.jpg'); background-color: #3F729F;"></div>
+                        <h3>Музей-аптека Карла Оссе</h3>
+                        <p>Воссозданная историческая аптека немецкого провизора, одна из старейших аптек Астрахани.</p>
+                    </div>
+                    <!-- Карточка 6 -->
+                    <div class="sight-card hover-lift animate-on-scroll">
+                        <div class="sight-img" style="background-image: url('assets/images/arbat.jpg'); background-color: #4EBCD5;"></div>
+                        <h3>Астраханский Арбат</h3>
+                        <p>Пешеходная зона улицы Кирова - любимое место прогулок горожан и туристов с уличными музыкантами.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ТАЙМЛАЙН ================= -->
+        <section class="section timeline-section" id="timeline">
+            <div class="container">
+                <h2 class="section-title">Исторический таймлайн</h2>
+                <div class="timeline">
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-date">XVIII век</div>
+                        <div class="timeline-text">Начало формирования улицы, застройка купеческими домами.</div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-date">XIX век</div>
+                        <div class="timeline-text">Расцвет торговли, появление особняков в стиле классицизм.</div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-date">1920-е годы</div>
+                        <div class="timeline-text">Переименование в честь Сергея Кирова.</div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-date">Современность</div>
+                        <div class="timeline-text">Пешеходная зона, фестивали и туристический центр.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ЦЕНЫ ================= -->
+        <section class="section prices" id="prices">
+            <div class="container">
+                <h2 class="section-title">Стоимость экскурсий</h2>
+                <div class="prices-grid">
+                    <div class="price-card hover-lift animate-on-scroll">
+                        <div class="price-header">Обзорная экскурсия</div>
+                        <div class="price-value">1200 руб.</div>
+                        <ul class="price-features">
+                            <li>Продолжительность: 1.5 часа</li>
+                            <li>Основные достопримечательности</li>
+                            <li>Исторический центр</li>
+                        </ul>
+                    </div>
+                    <div class="price-card hover-lift featured animate-on-scroll">
+                        <div class="price-badge">Популярная</div>
+                        <div class="price-header">Расширенная экскурсия</div>
+                        <div class="price-value">2000 руб.</div>
+                        <ul class="price-features">
+                            <li>Продолжительность: 2.5 часа</li>
+                            <li>Все достопримечательности улицы</li>
+                            <li>Посещение музеев</li>
+                            <li>Аудиогид в подарок</li>
+                        </ul>
+                    </div>
+                    <div class="price-card hover-lift animate-on-scroll">
+                        <div class="price-header">Индивидуальная экскурсия</div>
+                        <div class="price-value">3500 руб.</div>
+                        <ul class="price-features">
+                            <li>Продолжительность: по желанию</li>
+                            <li>Личный гид</li>
+                            <li>Гибкий маршрут</li>
+                            <li>Трансфер от отеля</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="prices-note animate-on-scroll">* Скидка 50% действует на все виды экскурсий для льготных категорий</p>
+            </div>
+        </section>
+
+        <!-- ================= СКИДКА 50% + РАСПИСАНИЕ ================= -->
+        <section class="section discount-schedule-section">
+            <div class="container">
+                <div class="discount-schedule-block animate-on-scroll">
+                    <div class="discount-schedule-grid">
+                        <div class="discount-side">
+                            <span class="discount-percent">СКИДКА 50%</span>
+                            <p class="discount-detail">Для групп от 4-х человек, пенсионеров и школьников</p>
+                        </div>
+                        <div class="schedule-side">
+                            <!-- Замените src на путь к вашему изображению: assets/images/banner.jpg -->
+                            <div class="schedule-image">
+                                <img src="assets/images/banner.jpg" alt="Расписание экскурсий" loading="lazy"
+                                    onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #00809B, #3F729F)'; this.parentElement.style.minHeight='120px';">
+                            </div>
+                            <div class="schedule-content">
+                                <h4 class="schedule-title">Расписание экскурсий</h4>
+                                <ul class="schedule-list">
+                                    <li><span>ПН</span> с 16:00 до 17:30</li>
+                                    <li><span>ВТ</span> с 13:25 до 14:55</li>
+                                    <li><span>СР</span> с 09:05 до 10:35</li>
+                                    <li><span>ЧТ</span> с 15:00 до 16:30</li>
+                                    <li><span>ПТ</span> с 11:30 до 13:00</li>
+                                    <li><span>СБ</span> с 18:30 до 20:00</li>
+                                    <li><span>ВС</span> выходной</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 3D-ТУР ================= -->
+        <section class="section tour3d" id="tour3d">
+            <div class="container">
+                <h2 class="section-title">3D-тур по улице Кирова</h2>
+                <div class="tour-container animate-on-scroll">
+                    <div class="panorama-container">
+                        <!-- Google Street View: улица Кирова, Астрахань -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!4v1715250000000!6m8!1m7!1sCAoSLEFGMVFpcFBuQXF0Sm1fMDRrWVUxWmtEY3ZMRWhMcXJQdWh2VENfb2R2ZE5w!2m2!1d46.349102!2d48.040248!3f325!4f15!5f0.7820865974627469"
+                            allowfullscreen
+                            loading="lazy"
+                            title="3D-тур по улице Кирова в Астрахани">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ОТЗЫВЫ (СЛАЙДЕР) ================= -->
+        <section class="section reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы гостей</h2>
+                <div class="swiper reviews-swiper animate-on-scroll">
+                    <div class="swiper-wrapper">
+                        <!-- Слайд 1 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <!-- Замените src на путь к аватарке: assets/images/avatar-1.jpg -->
+                                <div class="review-avatar">
+                                    <img src="assets/images/avatar-1.jpg" alt="Аватар" loading="lazy"
+                                        onerror="this.style.display='none'; this.parentElement.textContent='О'">
+                                </div>
+                                <div class="review-name">Олег</div>
+                                <div class="review-date">04 июня 2025</div>
+                                <div class="review-stars">★★★★★</div>
+                                <p>Экскурсия оставила самые приятные впечатления! Гид был очень эрудированным и увлечённым, информация подавалась легко и интересно.</p>
+                            </div>
+                        </div>
+                        <!-- Слайд 2 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-avatar">
+                                    <img src="assets/images/avatar-2.jpg" alt="Аватар" loading="lazy"
+                                        onerror="this.style.display='none'; this.parentElement.textContent='Е'">
+                                </div>
+                                <div class="review-name">Елена</div>
+                                <div class="review-date">15 мая 2025</div>
+                                <div class="review-stars">★★★★★</div>
+                                <p>Очень красивая улица, обязательно приедем ещё! Спасибо за скидку пенсионерам. Всё очень понравилось!</p>
+                            </div>
+                        </div>
+                        <!-- Слайд 3 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-avatar">
+                                    <img src="assets/images/avatar-3.jpg" alt="Аватар" loading="lazy"
+                                        onerror="this.style.display='none'; this.parentElement.textContent='Д'">
+                                </div>
+                                <div class="review-name">Дмитрий</div>
+                                <div class="review-date">22 июля 2025</div>
+                                <div class="review-stars">★★★★☆</div>
+                                <p>Отличная экскурсия, узнал много нового об архитектуре Астрахани. Гид профессионал своего дела.</p>
+                            </div>
+                        </div>
+                        <!-- Слайд 4 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-avatar">
+                                    <img src="assets/images/avatar-4.jpg" alt="Аватар" loading="lazy"
+                                        onerror="this.style.display='none'; this.parentElement.textContent='А'">
+                                </div>
+                                <div class="review-name">Анна</div>
+                                <div class="review-date">10 августа 2025</div>
+                                <div class="review-stars">★★★★★</div>
+                                <p>Лучшая прогулка по центру! Гид - профессионал своего дела. Вся семья в восторге от экскурсии.</p>
+                            </div>
+                        </div>
+                        <!-- Слайд 5 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-avatar">
+                                    <img src="assets/images/avatar-5.jpg" alt="Аватар" loading="lazy"
+                                        onerror="this.style.display='none'; this.parentElement.textContent='М'">
+                                </div>
+                                <div class="review-name">Мария</div>
+                                <div class="review-date">03 сентября 2025</div>
+                                <div class="review-stars">★★★★★</div>
+                                <p>Прекрасная экскурсия по историческим местам! Улица Кирова - настоящая жемчужина Астрахани. Обязательно вернёмся!</p>
+                            </div>
+                        </div>
+                        <!-- Слайд 6 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-avatar">
+                                    <img src="assets/images/avatar-6.jpg" alt="Аватар" loading="lazy"
+                                        onerror="this.style.display='none'; this.parentElement.textContent='С'">
+                                </div>
+                                <div class="review-name">Сергей</div>
+                                <div class="review-date">18 октября 2025</div>
+                                <div class="review-stars">★★★★☆</div>
+                                <p>Очень познавательная экскурсия. Архитектура впечатляет, а рассказ гида просто завораживает. Рекомендую!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ГОЛОСОВАНИЕ ================= -->
+        <section class="section voting">
+            <div class="container">
+                <h2 class="section-title">Ваше любимое место на улице Кирова</h2>
+                <div class="voting-grid animate-on-scroll" id="votingContainer">
+                    <div class="vote-card" data-vote="bratskiy">
+                        <h4>Братский сад</h4>
+                        <p>Мемориальный комплекс</p>
+                        <button class="vote-btn">Голосовать</button>
+                    </div>
+                    <div class="vote-card" data-vote="skver">
+                        <h4>Сквер Кирова</h4>
+                        <p>Зона отдыха с фонтанами</p>
+                        <button class="vote-btn">Голосовать</button>
+                    </div>
+                    <div class="vote-card" data-vote="sharlau">
+                        <h4>Кондитерская Шарлау</h4>
+                        <p>Памятник архитектуры XIX в.</p>
+                        <button class="vote-btn">Голосовать</button>
+                    </div>
+                    <div class="vote-card" data-vote="pochta">
+                        <h4>Астраханский почтамт</h4>
+                        <p>Историческое здание с часами</p>
+                        <button class="vote-btn">Голосовать</button>
+                    </div>
+                    <div class="vote-card" data-vote="arbat">
+                        <h4>Астраханский Арбат</h4>
+                        <p>Пешеходная зона</p>
+                        <button class="vote-btn">Голосовать</button>
+                    </div>
+                </div>
+                <div id="voteResults" class="vote-results animate-on-scroll"></div>
+            </div>
+        </section>
+
+        <!-- ================= КОНТАКТЫ + ФОРМА + КАРТА ================= -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Контакты и запись на экскурсию</h2>
+                <div class="contact-wrapper animate-on-scroll">
+                    <div class="contact-info-block">
+                        <div class="info-item">
+                            <div class="info-label">Телефон</div>
+                            <div class="info-value">+7 (8512) 19-52-00</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Email</div>
+                            <div class="info-value">kirovskiyrayon@yandex.ru</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Адрес</div>
+                            <div class="info-value">г. Астрахань, улица Кирова</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Режим работы</div>
+                            <div class="info-value">Ежедневно с 9:00 до 20:00</div>
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <form id="bookingForm">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" placeholder="Имя (не менее 2 символов)">
+                                <div class="error-msg" id="nameError"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="example@mail.ru">
+                                <div class="error-msg" id="emailError"></div>
+                            </div>
+                            <button type="submit" class="btn-primary">Отправить заявку</button>
+                            <div id="formSuccess" class="success-msg"></div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Карта -->
+                <div class="map-wrapper animate-on-scroll">
+                    <div id="yandexMap" style="width: 100%; height: 350px; border-radius: 24px; overflow: hidden;"></div>
+                    <p class="map-caption">Кликните по маркеру, чтобы узнать подробнее об улице Кирова</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= ПОДВАЛ ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="#hero">Главная</a></li>
+                        <li><a href="#history">История</a></li>
+                        <li><a href="#sights">Достопримечательности</a></li>
+                        <li><a href="#prices">Цены</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="#tour3d">3D-тур</a></li>
+                        <li><a href="#contact">Карта</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="footer-contact-list">
+                        <li>+7 (8512) 19-52-00</li>
+                        <li>kirovskiyrayon@yandex.ru</li>
+                        <li>г. Астрахань, ул. Кирова</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 - все права защищены. Улица Кирова, Астрахань</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кастомный курсор -->
+    <div class="custom-cursor"></div>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Замените YOUR_API_KEY на ваш ключ Яндекс.Карт -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
