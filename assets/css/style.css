@@ -1,4 +1,4 @@
-/* ================= БАЗОВЫЕ НАСТРОЙКИ И ПЕРЕМЕННЫЕ ================= */
+/* База */
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ body {
     padding: 0 24px;
 }
 
-/* ================= КАСТОМНЫЙ КУРСОР ================= */
+/* Кастомный курсор */
 .custom-cursor {
     width: 32px;
     height: 32px;
@@ -64,7 +64,7 @@ body {
     background: rgba(0, 128, 155, 0.1);
 }
 
-/* ================= ШАПКА ================= */
+/* Шапка */
 .header {
     position: sticky;
     top: 0;
@@ -215,7 +215,7 @@ body {
     padding: 10px 0;
 }
 
-/* ================= HERO ================= */
+/* Hero */
 .hero {
     position: relative;
     min-height: 85vh;
@@ -272,7 +272,7 @@ body {
     font-weight: bold;
 }
 
-/* ================= КНОПКИ ================= */
+/*  Кнопки */
 .btn-primary {
     display: inline-block;
     background: var(--primary-blue);
@@ -328,7 +328,7 @@ body {
     transform: scale(0.97);
 }
 
-/* ================= СЕКЦИИ ================= */
+/* Секции */
 .section {
     padding: 80px 0;
 }
@@ -340,7 +340,7 @@ body {
     color: var(--primary-blue);
 }
 
-/* ================= АНИМАЦИИ ПРИ СКРОЛЛЕ ================= */
+/* Анимации при скролле */
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(40px);
@@ -352,7 +352,7 @@ body {
     transform: translateY(0);
 }
 
-/* ================= ИСТОРИЯ ================= */
+/* История */
 .history-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -380,7 +380,7 @@ body {
     font-size: 1.8rem;
 }
 
-/* ================= ДОСТОПРИМЕЧАТЕЛЬНОСТИ ================= */
+/* Достопримечательности */
 .sights-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -412,7 +412,7 @@ body {
     color: var(--text-muted);
 }
 
-/* ================= ТАЙМЛАЙН ================= */
+/* Таймлайн */
 .timeline {
     max-width: 700px;
     margin: 0 auto;
@@ -438,7 +438,7 @@ body {
     color: var(--text-muted);
 }
 
-/* ================= ЦЕНЫ ================= */
+/* Цены */
 .prices-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -517,7 +517,7 @@ body {
     margin-top: 24px;
 }
 
-/* ================= БЛОК СКИДКИ И РАСПИСАНИЯ ================= */
+/* Расписание */
 .discount-schedule-section {
     padding-top: 0;
 }
@@ -607,7 +607,7 @@ body {
     flex-shrink: 0;
 }
 
-/* ================= 3D-ТУР ================= */
+/* 3Д тур= */
 .tour-container {
     border-radius: 28px;
     overflow: hidden;
@@ -630,7 +630,7 @@ body {
     border: none;
 }
 
-/* ================= ОТЗЫВЫ (СЛАЙДЕР) ================= */
+/* Оттзывы */
 .reviews-swiper {
     padding: 10px 0 60px;
 }
@@ -711,7 +711,7 @@ body {
     background: var(--primary-blue);
 }
 
-/* ================= ГОЛОСОВАНИЕ ================= */
+/* Голосование */
 .voting-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -779,7 +779,7 @@ body {
     gap: 4px;
 }
 
-/* ================= КОНТАКТЫ + ФОРМА + КАРТА ================= */
+/* Контакты+форма+карта */
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -869,7 +869,7 @@ body {
     color: var(--text-muted);
 }
 
-/* ================= ПОДВАЛ ================= */
+/* Подвал */
 .footer {
     background: var(--bg-card);
     margin-top: 60px;
@@ -925,7 +925,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* ================= HOVER-ЭФФЕКТЫ ================= */
+/* Hover эффекты */
 .hover-scale:hover {
     transform: scale(1.03);
     box-shadow: var(--shadow-md);
@@ -936,7 +936,7 @@ body {
     box-shadow: var(--shadow-md);
 }
 
-/* ================= АДАПТИВНОСТЬ ================= */
+/* Адаптивность*/
 @media (max-width: 768px) {
     .nav-links {
         display: none;
