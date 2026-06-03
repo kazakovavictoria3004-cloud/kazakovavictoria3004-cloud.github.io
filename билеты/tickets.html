@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей компьютерных технологий — Стоимость билетов</title>
+    <link rel="stylesheet" href="/билеты/assets/css/tickets-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="container">покупка</div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="4" width="20" height="12" rx="1" />
+                    <path d="M6 20h12M12 16v4" />
+                </svg>
+                <div class="logo-text">
+                    <span>Музей компьютерных</span>
+                    <span>технологий</span>
+                </div>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/главная страница/index.html">Главная</a></li>
+                    <li><a href="/посетителям/visitors.html">Посетителям</a></li>
+                    <li><a href="/история/history.html">Музей</a></li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-toggle">Контакты <i
+                                class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                        <div class="nav-dropdown-menu">
+                            <div class="dropdown-info-row"><i class="fa-solid fa-phone"></i> 7 (900) 500-54-13</div>
+                            <div class="dropdown-info-row"><i class="fa-solid fa-envelope"></i>
+                                museumoftechnology@gmail.com</div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tickets.html" class="btn btn-ticket active-page">Купить билет</a>
+                <div class="search-box">
+                    <input type="text" placeholder="Поиск по сайту...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="tickets-page-content">
+        <div class="container content-layout-grid">
+
+            <section class="tickets-section">
+                <h1 class="main-title reveal">СТОИМОСТЬ БИЛЕТОВ</h1>
+
+                <div class="tickets-table">
+
+                    <div class="ticket-row reveal">
+                        <div class="ticket-col col-type">
+                            <span class="meta-label">Входной билет</span>
+                            <h2 class="ticket-name">Взрослый</h2>
+                        </div>
+                        <div class="ticket-col col-age">
+                            <span class="meta-label">От 18 лет</span>
+                        </div>
+                        <div class="ticket-col col-price-action">
+                            <span class="ticket-price">350 ₽</span>
+                            <button class="btn btn-order">Оформить</button>
+                        </div>
+                    </div>
+
+                    <div class="ticket-row reveal">
+                        <div class="ticket-col col-type">
+                            <span class="meta-label">Входной билет</span>
+                            <h2 class="ticket-name">Детский</h2>
+                        </div>
+                        <div class="ticket-col col-age">
+                            <span class="meta-label">От 7 до 18 лет включительно</span>
+                        </div>
+                        <div class="ticket-col col-price-action">
+                            <span class="ticket-price">250 ₽</span>
+                            <button class="btn btn-order">Оформить</button>
+                        </div>
+                    </div>
+
+                    <div class="ticket-row row-family reveal">
+                        <div class="ticket-col col-type">
+                            <span class="meta-label">Входной билет</span>
+                            <h2 class="ticket-name">Семейный</h2>
+                        </div>
+                        <div class="ticket-col col-age">
+                            <span class="meta-label bold-meta">Для семей от 4-ех человек</span>
+                            <span class="sub-meta">Двое взрослых, двое детей</span>
+                        </div>
+                        <div class="ticket-col col-price-action">
+                            <span class="ticket-price">990 ₽</span>
+                            <button class="btn btn-order">Оформить</button>
+                        </div>
+                    </div>
+
+                    <div class="ticket-row reveal">
+                        <div class="ticket-col col-type">
+                            <span class="meta-label">Входной билет</span>
+                            <h2 class="ticket-name">Льготный</h2>
+                        </div>
+                        <div class="ticket-col col-age">
+                            <span class="meta-label bold-meta">Для инвалидов, пенсионеров</span>
+                        </div>
+                        <div class="ticket-col col-price-action">
+                            <span class="ticket-price">150 ₽</span>
+                            <button class="btn btn-order">Оформить</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <aside class="sidebar-section reveal">
+                <div class="promo-sticky-card" id="tiltCard">
+                    <div class="promo-banner-image"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80');">
+                        <div class="banner-title-box">
+                            <h3>Выставка «Цифровой горизонт»</h3>
+                        </div>
+                    </div>
+                    <a href="#" class="sidebar-more-link">Подробнее</a>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="main-footer reveal">
+        <div class="container footer-grid">
+
+            <div class="footer-col form-col">
+                <h3 class="footer-title">ПОДПИШИТЕСЬ НА ОБНОВЛЕНИЯ</h3>
+                <form id="footerForm" class="footer-form">
+                    <input type="email" placeholder="Введите вашу почту" required>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" required>
+                        <span class="box-target"></span>
+                        <span class="label-text">
+                            Я согласен на обработку <b>персональных данных</b>, я прочитал <b>политику
+                                конфиденциальности и пользовательское соглашение</b>
+                        </span>
+                    </label>
+                </form>
+                <div class="copyright-text">© 2023 - 2025 museumoftechnology.com</div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">КОНТАКТЫ</h3>
+                <div class="contact-links">
+                    <p class="tel-text">7 (900) 500-54-13</p>
+                    <p class="mail-text">museumoftechnology@gmail.com</p>
+                    <a href="#" class="underline-link">Контакты</a>
+                </div>
+                <div class="social-row">
+                    <a href="#" title="ВКонтакте"><i class="fa-brands fa-vk"></i></a>
+                    <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+
+                <h3 class="footer-title space-top">ПРАВИЛА И ПОЛИТИКА</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">О НАС</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Документация</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">ПОДПИСКА</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Подарочные карты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">БОЛЬШЕ</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Центр помощи</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="/js/app-core.js"></script>
+</body>
+
+</html>
